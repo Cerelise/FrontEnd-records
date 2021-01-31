@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Query</title>
+    <style>
+      .box {
+        height: 100vh;
+        text-align: center;
+        padding-top: 100px;
+      }
+
+      /* width <= 1201px */
+      @media (min-width: 1201px) {
+        .box {
+          background-color: #f1c40f;
+          color: #fff;
+          font-size: 60px;
+        }
+      }
+
+      /* 1200px >= width >= 800px */
+      @media (max-width: 1200px) and (min-width: 800px) {
+        .box {
+          background-color: #2ecc71;
+          color: aqua;
+          font-size: 40px;
+        }
+      }
+
+      /* 799px >= width >= 400px */
+      @media (max-width: 799px) and (min-width: 400px) {
+        .box {
+          background-color: #3498db;
+          color: black;
+          font-size: 20px;
+        }
+      }
+
+      /* width <= 399px */
+      @media (max-width: 399px) {
+        .box {
+          background-color: #8e44ad;
+          color: floralwhite;
+          font-size: 15px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <span>Cerelise</span>
+    </div>
+  </body>
+  <script>
+    // 媒体查询是一种响应式布局方式
+    // 从用户的角度来看，当他们在使用浏览器查看不同尺寸下的网页时，网页根据用户页面的当前尺寸作出响应，返回不一样的页面，以优化用户体验
+    // 在每一个媒体查询的宽度区间上，实际上它可以给你一个固定的样式，当你在拉伸页面的时候，它都会第一时间作出相应设置的渲染
+  </script>
+</html>

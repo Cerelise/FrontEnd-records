@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- 默认的视口设置 设备宽度 初始缩放为1倍 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responser Layout</title>
+  </head>
+  <style>
+    html {
+      /* 默认值为20px 建议：50%*/
+      font-size: 50%;
+      height: 100%;
+      /* 推荐值是10px */
+    }
+
+    body {
+      margin: 0;
+      height: 100%;
+    }
+
+    .box {
+      width: 80vw;
+      height: 60vh;
+      /* border: 1px solid #000; */
+      height: 100%;
+      background-color: yellowgreen;
+      background: url(/rs/image/1.jpg) no-repeat center/cover;
+    }
+    p {
+      font-size: 5rem;
+      margin: 0;
+      /* 40px */
+    }
+  </style>
+  <body>
+    <div class="box">
+      <p>This is a test Text</p>
+    </div>
+  </body>
+  <script>
+    // em 尺寸
+    // font-size em单位就是父级元素的两倍
+    // body 默认 font-size为16/20px 所以此时2rem就是32/40px
+    // height,width同样道理，默认body为父级，长度16/20px  例 10rem => 160/200px
+
+    // rem (root em) 根
+    // 相对于html(20px)的量值改变
+    // 这表示你可以通过修改html的属性值的方式控制整个网页的样式大小
+
+    // vh与vw  视口高度与视口宽度
+    // 当我们想让背景颜色占满空间，需要设置一系列标签，十分麻烦
+    // 使用vh使事情变得简单
+    // vh(viewport height)视口高度 指挡墙你的可视区域有多大 将其分成100份(可以当100%理解)
+    // 比如你想使用当前可视区60%的区域，将vh/vw设置为60即可
+    // 他俩的默认值为100，可以根据自己的需求进行调整
+  </script>
+</html>

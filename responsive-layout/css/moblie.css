@@ -1,0 +1,74 @@
+/* 针对移动端的媒体查询 */
+@media (max-width:1199px) and (min-width:769px) {
+  .article-board {
+    width: 100%;
+  }
+
+  .article-board .inner {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+@media(max-width:768px) {
+  .header {
+    text-align: center;
+  }
+
+  .header .logo {
+    float: none;
+    display: inline;
+  }
+
+  .header .header-nav {
+    display: none;
+    position: absolute;
+    top: 5rem;
+    left: 0;
+    z-index: 1;
+    float: none;
+    width: 100%;
+    height: 13.2rem;
+    margin: 0;
+    background-color: #3498db;
+    text-align: center;
+  }
+
+  .header .nav-item {
+    float: none;
+    width: 100%;
+    height: 4.4rem;
+    line-height: 4.4rem;
+  }
+
+  .header .nav-item:hover {
+    background-color: #2980b9;
+    color: #fff;
+  }
+
+  .header .nav-lk {
+    font-size: 1.4rem;
+  }
+
+  .header .fa-bars {
+    display: inline;
+  }
+
+  .article-board {
+    width: 100%;
+  }
+
+  .article-board .inner {
+    width: 100%;
+    margin: 0;
+  }
+
+  .article-board .article-card {
+    width: 50%;
+  }
+
+  .article-board .article-card h1 {
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+  }
+}
