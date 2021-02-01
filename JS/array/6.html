@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .hide {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div>Cerelise</div>
+    <div>Catsayer</div>
+    <script>
+      let div = document.querySelectorAll("div");
+      // console.log(div);
+
+      // 使dom元素集合使用数组方法的方式
+      // Array.from(div).map(function(item){
+      //   console.log(item)
+      // });
+
+      // Array.prototype.map.call(div,function(item){
+      //   console.log(item)
+      // })
+
+      // console.log([...div])
+
+      [...div].map((item) => {
+        item.addEventListener("click", function () {
+          this.classList.toggle("hide");
+        });
+      });
+    </script>
+  </body>
+</html>
